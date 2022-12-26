@@ -24,6 +24,11 @@ const router = createRouter({
       name: "reports",
       component: () => import("../views/ReportstView.vue"),
     },
+    {
+      path: "/vuebasic",
+      name: "vue basic",
+      component: () => import("../views/VueBassic.vue"),
+    },
   ],
 });
 
