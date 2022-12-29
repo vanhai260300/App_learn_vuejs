@@ -24,6 +24,18 @@ const router = createRouter({
       name: "reports",
       component: () => import("../views/ReportstView.vue"),
     },
+    {
+      path: "/vuebasic",
+      name: "vue basic",
+      component: () => import("../views/vueBasic/VueBassicView.vue"),
+      children: [
+        {
+          path: "vuebasic1",
+          name: "vue basic 1",
+          component: () => import("../views/vueBasic/VueBassic1View.vue"),
+        }
+      ]
+    }
   ],
 });
 
