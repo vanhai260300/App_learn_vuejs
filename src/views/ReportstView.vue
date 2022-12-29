@@ -18,10 +18,10 @@ const reportsState = reactive<IState>({
   reports: [],
 })
 
-onMounted( async () => {
-  const res = await axios.get('http://localhost:5000/reports');
-  reportsState.reports = res.data
-})
+// onMounted( async () => {
+//   const res = await axios.get('http://localhost:5000/reports');
+//   reportsState.reports = res.data
+// })
 </script>
 
 <template>

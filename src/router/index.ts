@@ -27,8 +27,15 @@ const router = createRouter({
     {
       path: "/vuebasic",
       name: "vue basic",
-      component: () => import("../views/VueBassic.vue"),
-    },
+      component: () => import("../views/vueBasic/VueBassicView.vue"),
+      children: [
+        {
+          path: "vuebasic1",
+          name: "vue basic 1",
+          component: () => import("../views/vueBasic/VueBassic1View.vue"),
+        }
+      ]
+    }
   ],
 });
 
